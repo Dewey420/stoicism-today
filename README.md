@@ -1,0 +1,2 @@
+# stoicism-today
+App
