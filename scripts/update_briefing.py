@@ -20,15 +20,19 @@ def get_moon():
         return "🌑 Moon data unavailable"
 
 def draw_tarot():
-    cards = [
-        ("The Magician", "You already have the tools. Use them."),
-        ("The Fool", "A new path opens. Step forward."),
-        ("The Hermit", "Seek inward clarity."),
-        ("The Emperor", "Take control. Build structure."),
-        ("The High Priestess", "Trust your intuition.")
-    ]
+    tarot_path = DATA / "tarot_cards.json"
+    cards = load_json(tarot_path)
     card = random.choice(cards)
-    return f"{card[0]}\n→ {card[1]}"
+
+    is_reversed = random.random() < 0.5
+    orientation = "Reversed" if is_reversed else "Upright"
+    meaning = card["reversed"] if is_reversed else card["upright"]
+
+    return (
+        f"{card['name']}\\n"
+        f"{card['arcana']} Arcana • {orientation}\\n"
+        f"→ {meaning}"
+    )
 def get_stoic_quote():
     quotes = [
         "“You have power over your mind—not outside events. Realize this, and you will find strength.”\\n— Marcus Aurelius",
