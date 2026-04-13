@@ -1,11 +1,34 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import json
+import requests
+import random
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+
+def get_moon():
+    try:
+        res = requests.get("https://api.farmsense.net/v1/moonphases/?d=0")
+        data = res.json()[0]
+        phase = data["Phase"]
+        illumination = round(float(data["Illumination"]) * 100)
+        return f"🌑 {phase}\n🌕 Illumination: {illumination}%\n→ Flow with the cycle."
+    except:
+        return "🌑 Moon data unavailable"
+
+def draw_tarot():
+    cards = [
+        ("The Magician", "You already have the tools. Use them."),
+        ("The Fool", "A new path opens. Step forward."),
+        ("The Hermit", "Seek inward clarity."),
+        ("The Emperor", "Take control. Build structure."),
+        ("The High Priestess", "Trust your intuition.")
+    ]
+    card = random.choice(cards)
+    return f"{card[0]}\n→ {card[1]}"
 
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -36,8 +59,8 @@ def main():
     briefing["title"] = f"🏛️🌅 STOICISM TODAY // {pretty.upper()}"
     briefing["tagline"] = "Auto-updated shell active."
     briefing["holidays"] = "📝 Placeholder holidays\nConnect your live holiday source next."
-    briefing["moon"] = "🌑 Moon data placeholder\n⏳ Connect a moon API next\n→ Lunar sync ready."
-    briefing["tarot"] = "Tarot placeholder\n→ Connect your daily draw source."
+    briefing["moon"] = get_moon()
+    briefing["tarot"] = draw_tarot()
     briefing["music"] = f"From your playlist:\n🎵 “{track['title']}” — {track['artist']}\n→ Auto-rotated from your playlist source."
     briefing["question"] = "What requires my disciplined attention today?"
     save_json(briefing_path, briefing)
