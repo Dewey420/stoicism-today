@@ -38,7 +38,7 @@ def get_stoic_quote():
         "“Luck is what happens when preparation meets opportunity.”\\n— Seneca"
     ]
     return random.choice(quotes)
-    def get_holidays(today):
+def get_holidays(today):
     holiday_map = {
         (4, 13): [
             "🍑 National Peach Cobbler Day",
