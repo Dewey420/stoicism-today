@@ -1,62 +1,24 @@
 [
-  {
-    "name": "The Fool",
-    "arcana": "Major",
-    "upright": "A new path opens. Trust the step.",
-    "reversed": "Recklessness, hesitation, or ignored risk."
-  },
-  {
-    "name": "The Magician",
-    "arcana": "Major",
-    "upright": "You already have the tools. Use them.",
-    "reversed": "Scattered power, manipulation, or unused ability."
-  },
-  {
-    "name": "The High Priestess",
-    "arcana": "Major",
-    "upright": "Trust quiet knowing over noise.",
-    "reversed": "Blocked intuition or refusal to listen inward."
-  },
-  {
-    "name": "The Emperor",
-    "arcana": "Major",
-    "upright": "Take control. Build structure.",
-    "reversed": "Rigidity, domination, or weak boundaries."
-  },
-  {
-    "name": "The Hermit",
-    "arcana": "Major",
-    "upright": "Step back. Clarity comes in solitude.",
-    "reversed": "Isolation, avoidance, or fear of inner truth."
-  },
-  {
-    "name": "The Chariot",
-    "arcana": "Major",
-    "upright": "Victory comes through discipline and direction.",
-    "reversed": "Loss of control or misdirected force."
-  },
-  {
-    "name": "The Sun",
-    "arcana": "Major",
-    "upright": "Clarity, vitality, and visible success.",
-    "reversed": "Temporary doubt or blocked joy."
-  },
-  {
-    "name": "Page of Cups",
-    "arcana": "Minor",
-    "upright": "Stay open. Something subtle is speaking.",
-    "reversed": "Emotional immaturity or ignored inner signals."
-  },
-  {
-    "name": "Two of Swords",
-    "arcana": "Minor",
-    "upright": "A decision waits for clear sight.",
-    "reversed": "Avoidance cannot hold forever."
-  },
-  {
-    "name": "Nine of Cups",
-    "arcana": "Minor",
-    "upright": "Satisfaction grows where gratitude lives.",
-    "reversed": "Pleasure without depth or misread fulfillment."
-  }
+  {"name":"The Fool","arcana":"Major","upright":"A new path opens. Trust the step.","reversed":"Recklessness, hesitation, or ignored risk."},
+  {"name":"The Magician","arcana":"Major","upright":"You already have the tools. Use them.","reversed":"Scattered power or unused potential."},
+  {"name":"The High Priestess","arcana":"Major","upright":"Trust quiet knowing over noise.","reversed":"Blocked intuition or ignored inner voice."},
+  {"name":"The Empress","arcana":"Major","upright":"Growth, abundance, and creation.","reversed":"Creative block or emotional disconnection."},
+  {"name":"The Emperor","arcana":"Major","upright":"Structure, authority, and control.","reversed":"Rigidity or misuse of power."},
+  {"name":"The Hierophant","arcana":"Major","upright":"Tradition, wisdom, and guidance.","reversed":"Rebellion or rejection of structure."},
+  {"name":"The Lovers","arcana":"Major","upright":"Alignment, choice, and connection.","reversed":"Misalignment or conflict in values."},
+  {"name":"The Chariot","arcana":"Major","upright":"Victory through discipline and direction.","reversed":"Loss of control or scattered effort."},
+  {"name":"Strength","arcana":"Major","upright":"Inner strength and quiet resilience.","reversed":"Self-doubt or lack of control."},
+  {"name":"The Hermit","arcana":"Major","upright":"Seek solitude for clarity.","reversed":"Isolation or avoidance of truth."},
+  {"name":"Wheel of Fortune","arcana":"Major","upright":"Cycles shift. Change is coming.","reversed":"Resistance to change or bad timing."},
+  {"name":"Justice","arcana":"Major","upright":"Truth, balance, and accountability.","reversed":"Unfairness or avoidance of responsibility."},
+  {"name":"The Hanged Man","arcana":"Major","upright":"Pause. See from a new angle.","reversed":"Stagnation or refusal to let go."},
+  {"name":"Death","arcana":"Major","upright":"Transformation and rebirth.","reversed":"Resistance to necessary change."},
+  {"name":"Temperance","arcana":"Major","upright":"Balance and moderation create harmony.","reversed":"Excess or imbalance."},
+  {"name":"The Devil","arcana":"Major","upright":"Attachment, temptation, or illusion.","reversed":"Breaking free from control."},
+  {"name":"The Tower","arcana":"Major","upright":"Sudden change. Illusions collapse.","reversed":"Avoiding inevitable upheaval."},
+  {"name":"The Star","arcana":"Major","upright":"Hope, renewal, and calm clarity.","reversed":"Doubt or loss of faith."},
+  {"name":"The Moon","arcana":"Major","upright":"Illusion, intuition, and the unknown.","reversed":"Clarity emerging from confusion."},
+  {"name":"The Sun","arcana":"Major","upright":"Success, vitality, and joy.","reversed":"Temporary cloud over clarity."},
+  {"name":"Judgement","arcana":"Major","upright":"Awakening and higher calling.","reversed":"Self-doubt or ignoring the call."},
+  {"name":"The World","arcana":"Major","upright":"Completion and fulfillment.","reversed":"Incomplete cycles or delays."}
 ]
