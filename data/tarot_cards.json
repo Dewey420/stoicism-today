@@ -1,0 +1,62 @@
+[
+  {
+    "name": "The Fool",
+    "arcana": "Major",
+    "upright": "A new path opens. Trust the step.",
+    "reversed": "Recklessness, hesitation, or ignored risk."
+  },
+  {
+    "name": "The Magician",
+    "arcana": "Major",
+    "upright": "You already have the tools. Use them.",
+    "reversed": "Scattered power, manipulation, or unused ability."
+  },
+  {
+    "name": "The High Priestess",
+    "arcana": "Major",
+    "upright": "Trust quiet knowing over noise.",
+    "reversed": "Blocked intuition or refusal to listen inward."
+  },
+  {
+    "name": "The Emperor",
+    "arcana": "Major",
+    "upright": "Take control. Build structure.",
+    "reversed": "Rigidity, domination, or weak boundaries."
+  },
+  {
+    "name": "The Hermit",
+    "arcana": "Major",
+    "upright": "Step back. Clarity comes in solitude.",
+    "reversed": "Isolation, avoidance, or fear of inner truth."
+  },
+  {
+    "name": "The Chariot",
+    "arcana": "Major",
+    "upright": "Victory comes through discipline and direction.",
+    "reversed": "Loss of control or misdirected force."
+  },
+  {
+    "name": "The Sun",
+    "arcana": "Major",
+    "upright": "Clarity, vitality, and visible success.",
+    "reversed": "Temporary doubt or blocked joy."
+  },
+  {
+    "name": "Page of Cups",
+    "arcana": "Minor",
+    "upright": "Stay open. Something subtle is speaking.",
+    "reversed": "Emotional immaturity or ignored inner signals."
+  },
+  {
+    "name": "Two of Swords",
+    "arcana": "Minor",
+    "upright": "A decision waits for clear sight.",
+    "reversed": "Avoidance cannot hold forever."
+  },
+  {
+    "name": "Nine of Cups",
+    "arcana": "Minor",
+    "upright": "Satisfaction grows where gratitude lives.",
+    "reversed": "Pleasure without depth or misread fulfillment."
+  }
+]
