@@ -4,39 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stoicism Today</title>
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-noise"></div>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+
   <main class="app-shell">
-    <section class="hero">
-      <div id="title" class="title">🏛️🌅 STOICISM TODAY // LOADING</div>
+    <header class="hero shell-panel">
+      <div class="hero-topline">DAILY TRANSMISSION</div>
+      <h1 id="title" class="title">🏛️🌅 STOICISM TODAY // LOADING</h1>
       <div id="mode" class="mode">Mode: loading...</div>
       <div id="tagline" class="tagline">Loading signal...</div>
+      <div class="hero-rule"></div>
+    </header>
+
+    <section class="quote-banner shell-panel">
+      <div class="section-kicker">💬 STOIC SIGNAL</div>
+      <div id="quote" class="quote-text">Loading quote...</div>
     </section>
 
     <section class="section-header">🗂️ ◤ DAILY GRID ◢</section>
-    <section class="grid">
-      <article class="card"><h2>🎉 HOLIDAYS</h2><div id="holidays" class="block"></div></article>
-      <article class="card"><h2>🌑 LUNAR STATUS</h2><div id="moon" class="block"></div></article>
-      <article class="card"><h2>🧠 CURRENT</h2><div id="current" class="block"></div></article>
-      <article class="card sigil-card"><h2>🔺 SIGIL</h2><div id="sigilGlyph" class="sigil-glyph"></div><div id="sigilMeaning" class="block"></div></article>
-      <article class="card"><h2>🃏 TAROT</h2><div id="tarot" class="block"></div></article>
-      <article class="card"><h2>🎧 MUSIC OF THE DAY</h2><div id="music" class="block"></div></article>
+    <section class="grid grid-main">
+      <article class="card card-holidays">
+        <h2>🎉 HOLIDAYS</h2>
+        <div id="holidays" class="block"></div>
+      </article>
+
+      <article class="card card-moon">
+        <h2>🌑 LUNAR STATUS</h2>
+        <div class="moon-visual-wrap">
+          <div class="moon-glow"></div>
+          <div class="moon-disc"></div>
+          <div class="moon-shadow"></div>
+        </div>
+        <div id="moon" class="block"></div>
+      </article>
+
+      <article class="card card-current">
+        <h2>🧠 CURRENT</h2>
+        <div id="current" class="block"></div>
+      </article>
+
+      <article class="card card-sigil">
+        <h2>🔺 SIGIL</h2>
+        <div id="sigilGlyph" class="sigil-glyph"></div>
+        <div id="sigilMeaning" class="block sigil-meaning"></div>
+      </article>
+
+      <article class="card card-tarot">
+        <h2>🃏 TAROT</h2>
+        <div id="tarot" class="block"></div>
+      </article>
+
+      <article class="card card-music">
+        <h2>🎧 MUSIC OF THE DAY</h2>
+        <div id="music" class="block"></div>
+      </article>
     </section>
 
     <section class="section-header">⚡ ◤ COMMAND PANEL ◢</section>
-    <section class="grid">
-      <article class="card"><h2>🧠 DIRECTIVE</h2><div id="directive" class="block"></div></article>
-      <article class="card"><h2>⚡ ACTION</h2><div id="action" class="block"></div></article>
-      <article class="card"><h2>🏛️ PERSONA</h2><div id="persona" class="block"></div></article>
+    <section class="grid grid-command">
+      <article class="card card-directive">
+        <h2>🧠 DIRECTIVE</h2>
+        <div id="directive" class="block"></div>
+      </article>
+
+      <article class="card card-action">
+        <h2>⚡ ACTION</h2>
+        <div id="action" class="block"></div>
+      </article>
+
+      <article class="card card-persona">
+        <h2>🏛️ PERSONA</h2>
+        <div id="persona" class="block"></div>
+      </article>
     </section>
 
     <section class="section-header">📡 ◤ SIGNAL LAYER ◢</section>
-    <section class="grid">
-      <article class="card"><h2>💬 STOIC</h2><div id="quote" class="block"></div></article>
-      <article class="card"><h2>🔮 FINAL QUERY</h2><div id="question" class="block"></div></article>
+    <section class="grid grid-signal">
+      <article class="card card-question">
+        <h2>🔮 FINAL QUERY</h2>
+        <div id="question" class="block final-query"></div>
+      </article>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,47 @@
-const DAY_META={Sunday:{accent:"#E0B84F",sigil:"☉"},Monday:{accent:"#C7D5F7",sigil:"☽"},Tuesday:{accent:"#D94B4B",sigil:"♂"},Wednesday:{accent:"#59C37A",sigil:"☿"},Thursday:{accent:"#7C6DF2",sigil:"♃"},Friday:{accent:"#E78AC3",sigil:"♀"},Saturday:{accent:"#7C7C84",sigil:"♄"}};
-async function loadData(){const r=await fetch("data/briefing.json",{cache:"no-store"});if(!r.ok)throw new Error("Failed to load briefing.json");return r.json()}
-function setText(id,v){document.getElementById(id).textContent=v||""}
-function render(data){const meta=DAY_META[data.weekday]||DAY_META.Wednesday;document.documentElement.style.setProperty("--accent",meta.accent);setText("title",data.title);setText("mode",`Mode: ${data.mode}`);setText("tagline",data.tagline);setText("holidays",data.holidays);setText("moon",data.moon);setText("current",data.current);setText("sigilGlyph",data.sigil?.glyph||meta.sigil);setText("sigilMeaning",data.sigil?.meaning||"");setText("tarot",data.tarot);setText("music",data.music);setText("directive",data.directive);setText("action",data.action);setText("persona",data.persona);setText("quote",data.quote);setText("question",data.question)}
-loadData().then(render).catch(err=>{console.error(err);setText("title","🏛️🌅 STOICISM TODAY // SIGNAL LOST");setText("mode","Mode: recovery");setText("tagline","The data file could not be loaded.")});
+const DAY_META={
+  Sunday:{accent:"#e0b84f"},
+  Monday:{accent:"#c7d5f7"},
+  Tuesday:{accent:"#d94b4b"},
+  Wednesday:{accent:"#59c37a"},
+  Thursday:{accent:"#7c6df2"},
+  Friday:{accent:"#e78ac3"},
+  Saturday:{accent:"#7c7c84"}
+};
+
+async function loadData(){
+  const res=await fetch("data/briefing.json",{cache:"no-store"});
+  if(!res.ok) throw new Error("Failed to load briefing.json");
+  return res.json();
+}
+
+function setText(id,value){
+  const el=document.getElementById(id);
+  if(el) el.textContent=value||"";
+}
+
+function render(data){
+  const meta=DAY_META[data.weekday] || DAY_META.Wednesday;
+  document.documentElement.style.setProperty("--accent", meta.accent);
+  setText("title", data.title);
+  setText("mode", `Mode: ${data.mode}`);
+  setText("tagline", data.tagline);
+  setText("holidays", data.holidays);
+  setText("moon", data.moon);
+  setText("current", data.current);
+  setText("sigilGlyph", data.sigil?.glyph || "");
+  setText("sigilMeaning", data.sigil?.meaning || "");
+  setText("tarot", data.tarot);
+  setText("music", data.music);
+  setText("directive", data.directive);
+  setText("action", data.action);
+  setText("persona", data.persona);
+  setText("quote", data.quote);
+  setText("question", data.question);
+}
+
+loadData().then(render).catch(err=>{
+  console.error(err);
+  setText("title","🏛️🌅 STOICISM TODAY // SIGNAL LOST");
+  setText("mode","Mode: recovery");
+  setText("tagline","The data file could not be loaded.");
+});

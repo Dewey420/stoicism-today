@@ -1,16 +1,216 @@
 *{box-sizing:border-box}
-:root{--bg:#0d0f12;--panel:#151922;--text:#f2f4f8;--muted:#b9c2d0;--accent:#59c37a;--shadow:0 12px 40px rgba(0,0,0,.35);--radius:22px;--border:1px solid rgba(255,255,255,.08)}
-body{margin:0;min-height:100vh;background:radial-gradient(circle at top,rgba(89,195,122,.12),transparent 30%),linear-gradient(180deg,#0b0d11 0%,#0f1217 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.app-shell{width:min(1100px,calc(100% - 24px));margin:0 auto;padding:28px 0 40px}
-.hero{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:var(--border);border-radius:28px;box-shadow:var(--shadow);padding:22px 20px;margin-bottom:20px}
-.title{font-size:clamp(1.6rem,2.8vw,2.5rem);font-weight:800;line-height:1.15;letter-spacing:.02em}
-.mode{margin-top:10px;color:var(--accent);font-size:1.1rem;font-weight:700}
-.tagline{margin-top:6px;color:var(--muted);font-size:.98rem}
-.section-header{margin:22px 2px 12px;color:var(--muted);font-weight:800;letter-spacing:.04em}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-bottom:12px}
-.card{grid-column:span 6;background:linear-gradient(180deg,rgba(24,29,40,.96),rgba(18,22,30,.98));border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;min-height:150px}
-.card h2{margin:0 0 12px;font-size:.88rem;letter-spacing:.06em;color:var(--muted)}
-.block{white-space:pre-line;line-height:1.65;font-size:1rem}
-.sigil-card{display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
-.sigil-glyph{font-size:4rem;line-height:1;color:var(--accent);margin-bottom:12px;text-shadow:0 0 20px rgba(255,255,255,.08)}
-@media (max-width:760px){.app-shell{width:min(100% - 18px,100%);padding-top:18px}.hero{padding:18px 16px}.card{grid-column:span 12;min-height:unset}}
+:root{
+  --bg:#08101d;
+  --bg2:#111826;
+  --panel:rgba(17,26,40,.72);
+  --panel-2:rgba(20,31,48,.80);
+  --text:#f4f1eb;
+  --muted:#a8b2c8;
+  --gold:#cba85a;
+  --accent:#59c37a;
+  --line:rgba(255,255,255,.08);
+  --glow:0 22px 80px rgba(0,0,0,.45);
+  --radius:26px;
+}
+html,body{margin:0;min-height:100%}
+body{
+  background:
+    radial-gradient(circle at 50% 0%, rgba(74,115,221,.16), transparent 30%),
+    radial-gradient(circle at 10% 20%, rgba(203,168,90,.08), transparent 25%),
+    linear-gradient(180deg,#07101d 0%,#0b1322 55%,#0a0f19 100%);
+  color:var(--text);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  overflow-x:hidden;
+}
+.bg-noise{
+  position:fixed; inset:0; pointer-events:none; opacity:.08;
+  background-image: radial-gradient(rgba(255,255,255,.35) .4px, transparent .5px);
+  background-size:12px 12px;
+  mix-blend-mode:soft-light;
+}
+.bg-orb{position:fixed;border-radius:999px;filter:blur(80px);pointer-events:none;opacity:.18}
+.bg-orb-a{width:420px;height:420px;right:-120px;top:80px;background:#254c99}
+.bg-orb-b{width:280px;height:280px;left:-80px;top:360px;background:#9c7a29}
+.app-shell{
+  width:min(1200px, calc(100% - 28px));
+  margin:0 auto;
+  padding:28px 0 46px;
+  position:relative;
+  z-index:2;
+}
+.shell-panel{
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  background:linear-gradient(180deg,rgba(17,26,40,.82),rgba(11,18,30,.68));
+  border:1px solid var(--line);
+  box-shadow:var(--glow);
+  border-radius:32px;
+}
+.hero{
+  padding:28px 24px 24px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute; inset:auto -10% -40% auto;
+  width:260px;height:260px;border-radius:999px;
+  background:radial-gradient(circle, rgba(203,168,90,.18), transparent 65%);
+}
+.hero-topline{
+  color:var(--gold);
+  letter-spacing:.18em;
+  font-size:.78rem;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.title{
+  margin:0;
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-size:clamp(2.2rem, 5.4vw, 4.7rem);
+  line-height:.98;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.mode{
+  margin-top:14px;
+  color:var(--accent);
+  font-size:1.08rem;
+  font-weight:800;
+}
+.tagline{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:1rem;
+}
+.hero-rule{
+  width:min(520px, 78%);
+  height:1px;
+  margin-top:20px;
+  background:linear-gradient(90deg, transparent, rgba(203,168,90,.8), transparent);
+}
+.quote-banner{
+  margin-top:18px;
+  padding:24px 22px;
+}
+.section-kicker,.section-header{
+  color:var(--gold);
+  letter-spacing:.12em;
+  font-size:.82rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.quote-text{
+  margin-top:10px;
+  white-space:pre-line;
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-size:clamp(1.6rem,3vw,2.5rem);
+  line-height:1.08;
+  font-style:italic;
+}
+.section-header{
+  margin:24px 4px 12px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12, minmax(0, 1fr));
+  gap:16px;
+}
+.card{
+  min-height:170px;
+  padding:20px;
+  border-radius:var(--radius);
+  background:linear-gradient(180deg,var(--panel),var(--panel-2));
+  border:1px solid var(--line);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  box-shadow:var(--glow);
+  position:relative;
+  overflow:hidden;
+}
+.card::after{
+  content:"";
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 28%);
+  pointer-events:none;
+}
+.card h2{
+  margin:0 0 14px;
+  color:var(--gold);
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-size:1.15rem;
+  letter-spacing:.04em;
+}
+.block{
+  white-space:pre-line;
+  line-height:1.72;
+  font-size:1rem;
+  position:relative;
+  z-index:2;
+}
+.card-holidays{grid-column:span 7}
+.card-moon{grid-column:span 5}
+.card-current{grid-column:span 6}
+.card-sigil{grid-column:span 3; display:flex; flex-direction:column; justify-content:center; align-items:flex-start}
+.card-tarot{grid-column:span 3}
+.card-music{grid-column:span 12}
+.card-directive{grid-column:span 4}
+.card-action{grid-column:span 4}
+.card-persona{grid-column:span 4}
+.card-question{grid-column:span 12}
+.sigil-glyph{
+  font-size:5rem;
+  line-height:1;
+  color:var(--accent);
+  margin-top:2px;
+  text-shadow:0 0 26px rgba(255,255,255,.08);
+  animation:pulseGlow 3.5s ease-in-out infinite;
+}
+.sigil-meaning{margin-top:8px}
+.moon-visual-wrap{
+  position:relative;
+  width:160px; height:160px;
+  margin:2px auto 18px;
+}
+.moon-glow{
+  position:absolute; inset:24px;
+  background:radial-gradient(circle, rgba(255,255,255,.12), transparent 70%);
+  filter:blur(20px);
+}
+.moon-disc{
+  position:absolute; inset:18px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 35% 35%, rgba(255,255,255,.09), transparent 28%),
+    linear-gradient(90deg, rgba(77,108,171,.75), rgba(37,49,70,.9));
+  box-shadow:inset 0 0 30px rgba(255,255,255,.06), 0 0 28px rgba(255,255,255,.06);
+}
+.moon-shadow{
+  position:absolute; top:20px; right:18px; width:84px; height:120px;
+  border-radius:50%;
+  background:rgba(17,22,31,.82);
+  filter:blur(1px);
+}
+.final-query{
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-size:clamp(1.35rem,2.5vw,2rem);
+  line-height:1.14;
+}
+.card:hover{transform:translateY(-2px);transition:transform .25s ease}
+@keyframes pulseGlow{
+  0%,100%{transform:scale(1); filter:drop-shadow(0 0 6px rgba(255,255,255,.06))}
+  50%{transform:scale(1.03); filter:drop-shadow(0 0 14px rgba(255,255,255,.12))}
+}
+@media (max-width: 920px){
+  .card-holidays,.card-moon,.card-current,.card-sigil,.card-tarot,.card-music,.card-directive,.card-action,.card-persona,.card-question{grid-column:span 12}
+  .card-sigil{min-height:unset}
+}
+@media (max-width: 640px){
+  .app-shell{width:min(100% - 18px, 100%); padding-top:18px}
+  .hero{padding:22px 18px 20px}
+  .quote-banner{padding:20px 18px}
+  .card{padding:18px}
+  .moon-visual-wrap{width:132px;height:132px}
+  .moon-disc{inset:14px}
+  .moon-shadow{top:15px; right:14px; width:70px; height:100px}
+}
