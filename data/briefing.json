@@ -5,14 +5,14 @@
   "mode": "🌊 The Inner Tide",
   "tagline": "Auto-updated shell active.",
   "holidays": "📝 Placeholder holidays\nConnect your live holiday source next.",
-  "moon": "🌑 Moon data placeholder\n⏳ Connect a moon API next\n→ Lunar sync ready.",
+  "moon": "🌑 Moon data unavailable",
   "current": "☽ Moon\n⚔️ Máni\n🌿 Cerridwen\n🎨 Silver / White\n🌿 Mugwort\n💎 Moonstone / Selenite / Pearl\nEmotion • Intuition • Rest",
   "sigil": {
     "glyph": "☽",
     "meaning": "→ Observe. Reflect. Do not force."
   },
-  "tarot": "Tarot placeholder\n→ Connect your daily draw source.",
-  "music": "From your playlist:\n🎵 “Fade Into You” — Mazzy Star\n→ Auto-rotated from your playlist source.",
+  "tarot": "The Emperor\n→ Take control. Build structure.",
+  "music": "From your playlist:\n🎵 “Ocean Eyes” — Billie Eilish\n→ Auto-rotated from your playlist source.",
   "directive": "Listen inward\nSlow your reactions\nLet insight surface naturally\nProtect your energy",
   "action": "📝 Journal for ten minutes before you answer the world.",
   "persona": "🏛️ PERSONA — THE INNER TIDE\nObserve before reacting\nTrust subtle signals\nMove in rhythm, not force\nAllow feeling without drowning in it",
