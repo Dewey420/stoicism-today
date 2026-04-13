@@ -11,18 +11,20 @@ permissions:
 jobs:
   update-briefing:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          
-        name: Install dependencies
+
+      - name: Install dependencies
         run: pip install requests
-        
+
       - name: Run updater
         run: python scripts/update_briefing.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
