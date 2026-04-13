@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stoicism Today</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="app-shell">
+    <section class="hero">
+      <div id="title" class="title">🏛️🌅 STOICISM TODAY // LOADING</div>
+      <div id="mode" class="mode">Mode: loading...</div>
+      <div id="tagline" class="tagline">Loading signal...</div>
+    </section>
 
-<div id="app"></div>
+    <section class="section-header">🗂️ ◤ DAILY GRID ◢</section>
+    <section class="grid">
+      <article class="card"><h2>🎉 HOLIDAYS</h2><div id="holidays" class="block"></div></article>
+      <article class="card"><h2>🌑 LUNAR STATUS</h2><div id="moon" class="block"></div></article>
+      <article class="card"><h2>🧠 CURRENT</h2><div id="current" class="block"></div></article>
+      <article class="card sigil-card"><h2>🔺 SIGIL</h2><div id="sigilGlyph" class="sigil-glyph"></div><div id="sigilMeaning" class="block"></div></article>
+      <article class="card"><h2>🃏 TAROT</h2><div id="tarot" class="block"></div></article>
+      <article class="card"><h2>🎧 MUSIC OF THE DAY</h2><div id="music" class="block"></div></article>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section-header">⚡ ◤ COMMAND PANEL ◢</section>
+    <section class="grid">
+      <article class="card"><h2>🧠 DIRECTIVE</h2><div id="directive" class="block"></div></article>
+      <article class="card"><h2>⚡ ACTION</h2><div id="action" class="block"></div></article>
+      <article class="card"><h2>🏛️ PERSONA</h2><div id="persona" class="block"></div></article>
+    </section>
+
+    <section class="section-header">📡 ◤ SIGNAL LAYER ◢</section>
+    <section class="grid">
+      <article class="card"><h2>💬 STOIC</h2><div id="quote" class="block"></div></article>
+      <article class="card"><h2>🔮 FINAL QUERY</h2><div id="question" class="block"></div></article>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
