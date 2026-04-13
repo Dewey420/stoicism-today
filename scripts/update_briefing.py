@@ -29,7 +29,34 @@ def draw_tarot():
     ]
     card = random.choice(cards)
     return f"{card[0]}\n→ {card[1]}"
+def get_stoic_quote():
+    quotes = [
+        "“You have power over your mind—not outside events. Realize this, and you will find strength.”\\n— Marcus Aurelius",
+        "“First say to yourself what you would be; and then do what you have to do.”\\n— Epictetus",
+        "“Wherever there is a human being, there is an opportunity for kindness.”\\n— Seneca",
+        "“The soul becomes dyed with the color of its thoughts.”\\n— Marcus Aurelius",
+        "“Luck is what happens when preparation meets opportunity.”\\n— Seneca"
+    ]
+    return random.choice(quotes)
+    def get_holidays(today):
+    holiday_map = {
+        (4, 13): [
+            "🍑 National Peach Cobbler Day",
+            "🔤 National Scrabble Day",
+            "🥪 Make Lunch Count Day"
+        ],
+        (4, 14): [
+            "🌿 National Gardening Day",
+            "🧀 National Pecan Day"
+        ],
+        (4, 15): [
+            "💸 Tax Day",
+            "🎨 World Art Day"
+        ]
+    }
 
+    items = holiday_map.get((today.month, today.day), ["📝 No holidays entered yet"])
+    return "\\n".join(items)
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -58,9 +85,10 @@ def main():
     briefing["weekday"] = today.strftime("%A")
     briefing["title"] = f"🏛️🌅 STOICISM TODAY // {pretty.upper()}"
     briefing["tagline"] = "Auto-updated shell active."
-    briefing["holidays"] = "📝 Placeholder holidays\nConnect your live holiday source next."
+    briefing["holidays"] = get_holidays(today)
     briefing["moon"] = get_moon()
     briefing["tarot"] = draw_tarot()
+    briefing["quote"] = get_stoic_quote()
     briefing["music"] = f"From your playlist:\n🎵 “{track['title']}” — {track['artist']}\n→ Auto-rotated from your playlist source."
     briefing["question"] = "What requires my disciplined attention today?"
     save_json(briefing_path, briefing)
