@@ -1,0 +1,22 @@
+{
+  "playlistTitle": "Stoicism Today Playlist",
+  "rotationMode": "ordered",
+  "lastSelectedIndex": 0,
+  "tracks": [
+    {
+      "title": "Space Song",
+      "artist": "Beach House",
+      "url": "https://youtube.com/playlist?list=PL2ZX7qZWTw45wPtddjCFHNGA5EnSx-V45&si=A_nomgcmyoMSCrVn"
+    },
+    {
+      "title": "Fade Into You",
+      "artist": "Mazzy Star",
+      "url": "https://youtube.com/playlist?list=PL2ZX7qZWTw45wPtddjCFHNGA5EnSx-V45&si=A_nomgcmyoMSCrVn"
+    },
+    {
+      "title": "Ocean Eyes",
+      "artist": "Billie Eilish",
+      "url": "https://youtube.com/playlist?list=PL2ZX7qZWTw45wPtddjCFHNGA5EnSx-V45&si=A_nomgcmyoMSCrVn"
+    }
+  ]
+}
