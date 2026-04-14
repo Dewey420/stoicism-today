@@ -2,8 +2,8 @@ name: Daily Stoicism Today Update
 
 on:
   schedule:
-    # GitHub cron uses UTC. This lands at 6:05 AM CDT / 5:05 AM CST.
-    - cron: "5 11 * * *"
+    # GitHub cron uses UTC. This lands at 1:05 AM CDT / 12:05 AM CST.
+    - cron: "5 6 * * *"
   workflow_dispatch:
 
 permissions:
