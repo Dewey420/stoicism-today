@@ -33,7 +33,6 @@ function setTarotImage(data) {
 
 function render(data) {
   const meta = DAY_META[data.weekday] || DAY_META.Wednesday;
-  const cardName = data.tarotCard?.name || "Daily Signal";
 
   setText("title", "Stoicism Today");
   setText("mode", `${data.weekday || "Today"} // ${data.date || "Daily Briefing"}`);
@@ -50,8 +49,6 @@ function render(data) {
   setText("persona", data.persona);
   setText("quote", data.quote);
   setText("question", data.question);
-  setText("visualCaption", data.tarotCard?.arcana || "Daily Draw");
-  setText("visualTitle", cardName);
   setTarotImage(data);
 }
 

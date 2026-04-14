@@ -32,13 +32,6 @@ body {
   padding: 78px 0 88px;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.12fr 0.72fr;
-  gap: 88px;
-  align-items: start;
-}
-
 .hero-copy {
   max-width: 960px;
 }
@@ -60,8 +53,7 @@ body {
 }
 
 .title,
-.section-intro h2,
-.visual-caption strong {
+.section-intro h2 {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--accent-bright);
   font-weight: 700;
@@ -127,79 +119,6 @@ body {
   outline: none;
 }
 
-.visual-panel {
-  position: relative;
-  min-height: 338px;
-  margin: 8px 0 0;
-  overflow: hidden;
-  background: var(--black);
-  border: 1px solid rgba(255, 255, 255, 0.04);
-}
-
-.visual-image {
-  width: 100%;
-  height: 100%;
-  min-height: 338px;
-  display: block;
-  object-fit: cover;
-  opacity: 0.82;
-  filter: saturate(0.86) contrast(1.04);
-}
-
-.visual-image[hidden] {
-  display: none;
-}
-
-.visual-panel::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 46%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), transparent);
-}
-
-.signal-mark {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  z-index: 1;
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  transform: translate(-50%, -50%);
-  border: 3px solid rgba(255, 255, 255, 0.92);
-  border-radius: 50%;
-  color: #ffffff;
-  font-size: 1.45rem;
-  line-height: 1;
-  background: rgba(0, 0, 0, 0.18);
-}
-
-.visual-caption {
-  position: absolute;
-  z-index: 1;
-  left: 24px;
-  right: 24px;
-  bottom: 14px;
-  margin: 0;
-}
-
-.visual-caption span {
-  display: block;
-  color: #ffffff;
-  font-size: 0.92rem;
-  font-weight: 700;
-  text-align: right;
-}
-
-.visual-caption strong {
-  display: block;
-  margin-top: 2px;
-  font-size: 2.65rem;
-  line-height: 1.02;
-}
-
 .rule {
   height: 1px;
   width: 58%;
@@ -241,6 +160,30 @@ body {
   margin-bottom: 13px;
 }
 
+.tarot-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.tarot-row .body-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.tarot-card-image {
+  width: 118px;
+  max-width: 32%;
+  height: auto;
+  flex: 0 0 auto;
+  border: 1px solid var(--rule);
+  opacity: 0.9;
+}
+
+.tarot-card-image[hidden] {
+  display: none;
+}
+
 .briefing-block.wide {
   grid-column: 1 / -1;
 }
@@ -251,18 +194,8 @@ body {
     padding: 42px 0 64px;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-
   .title {
     font-size: 2.8rem;
-  }
-
-  .visual-panel,
-  .visual-image {
-    min-height: 312px;
   }
 
   .rule {
@@ -289,12 +222,12 @@ body {
     font-size: 2.28rem;
   }
 
-  .visual-caption strong {
-    font-size: 2rem;
+  .tarot-row {
+    gap: 16px;
   }
 
-  .visual-panel,
-  .visual-image {
-    min-height: 280px;
+  .tarot-card-image {
+    width: 92px;
+    max-width: 34%;
   }
 }

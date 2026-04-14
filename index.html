@@ -25,15 +25,6 @@
 
         <a class="start-link" href="#daily-grid">Start Here</a>
       </div>
-
-      <figure class="visual-panel">
-        <img id="tarotImage" class="visual-image" alt="Daily tarot card" hidden />
-        <div id="sigilGlyph" class="signal-mark">☽</div>
-        <figcaption class="visual-caption">
-          <span id="visualCaption">Daily Draw</span>
-          <strong id="visualTitle">Signal Loading</strong>
-        </figcaption>
-      </figure>
     </section>
 
     <div class="rule"></div>
@@ -48,7 +39,13 @@
         <article class="briefing-block"><h3>Lunar Status</h3><div id="moon" class="body-copy"></div></article>
         <article class="briefing-block"><h3>Current</h3><div id="current" class="body-copy"></div></article>
         <article class="briefing-block"><h3>Sigil</h3><div id="sigilMeaning" class="body-copy"></div></article>
-        <article class="briefing-block"><h3>Tarot</h3><div id="tarot" class="body-copy"></div></article>
+        <article class="briefing-block tarot-block">
+          <h3>Tarot</h3>
+          <div class="tarot-row">
+            <div id="tarot" class="body-copy"></div>
+            <img id="tarotImage" class="tarot-card-image" alt="Daily tarot card" hidden />
+          </div>
+        </article>
         <article class="briefing-block"><h3>Music of the Day</h3><div id="music" class="body-copy"></div></article>
       </div>
     </section>
