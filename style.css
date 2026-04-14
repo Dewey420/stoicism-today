@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Aladin&display=swap");
+
 * {
   box-sizing: border-box;
   letter-spacing: 0;
@@ -12,6 +14,8 @@
   --accent-bright: #c7a24b;
   --rule: rgba(199, 162, 75, 0.26);
   --black: #090909;
+  --body-font: "Aclonica", Arial, Helvetica, sans-serif;
+  --display-font: "Aladin", Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -23,7 +27,7 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
 }
 
 .app-shell {
@@ -40,8 +44,9 @@ body {
 .statement,
 .briefing-block h3 {
   margin: 0;
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-family: var(--display-font);
+  font-size: 1.35rem;
+  font-weight: 400;
   line-height: 1.45;
   text-transform: uppercase;
   color: var(--soft);
@@ -54,14 +59,14 @@ body {
 
 .title,
 .section-intro h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--display-font);
   color: var(--accent-bright);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .title {
   margin: 0;
-  font-size: 3.45rem;
+  font-size: 4.15rem;
   line-height: 1.04;
 }
 
@@ -79,6 +84,7 @@ body {
 
 .statement {
   color: var(--soft);
+  font-size: 1.45rem;
   margin-bottom: 18px;
 }
 
@@ -109,8 +115,9 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.96rem;
-  font-weight: 800;
+  font-family: var(--display-font);
+  font-size: 1.18rem;
+  font-weight: 400;
 }
 
 .start-link:hover,
@@ -140,7 +147,7 @@ body {
 
 .section-intro h2 {
   margin: 0;
-  font-size: 2.35rem;
+  font-size: 3.05rem;
   line-height: 1.08;
 }
 
@@ -157,6 +164,7 @@ body {
 }
 
 .briefing-block h3 {
+  font-size: 1.28rem;
   margin-bottom: 13px;
 }
 
@@ -195,7 +203,7 @@ body {
   }
 
   .title {
-    font-size: 2.8rem;
+    font-size: 3.28rem;
   }
 
   .rule {
@@ -219,7 +227,7 @@ body {
   }
 
   .title {
-    font-size: 2.28rem;
+    font-size: 2.72rem;
   }
 
   .tarot-row {
