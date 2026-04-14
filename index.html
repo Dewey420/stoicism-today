@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stoicism Today</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p id="mode" class="eyebrow">Daily Briefing</p>
+        <h1 id="title" class="title">Stoicism Today</h1>
+        <p id="tagline" class="lede">Loading signal...</p>
+
+        <div class="mission-copy">
+          <p class="statement">
+            You have been away from yourself too long. This is why you practice.
+          </p>
+          <div id="directive" class="body-copy"></div>
+          <div id="action" class="signature"></div>
+        </div>
+
+        <a class="start-link" href="#daily-grid">Start Here</a>
+      </div>
+
+      <figure class="visual-panel">
+        <img id="tarotImage" class="visual-image" alt="Daily tarot card" hidden />
+        <div id="sigilGlyph" class="signal-mark">☽</div>
+        <figcaption class="visual-caption">
+          <span id="visualCaption">Daily Draw</span>
+          <strong id="visualTitle">Signal Loading</strong>
+        </figcaption>
+      </figure>
+    </section>
+
+    <div class="rule"></div>
+
+    <section id="daily-grid" class="briefing-section">
+      <header class="section-intro">
+        <p class="eyebrow">Daily Grid</p>
+        <h2>Read the Day</h2>
+      </header>
+      <div class="content-grid">
+        <article class="briefing-block"><h3>Holidays</h3><div id="holidays" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Lunar Status</h3><div id="moon" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Current</h3><div id="current" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Sigil</h3><div id="sigilMeaning" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Tarot</h3><div id="tarot" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Music of the Day</h3><div id="music" class="body-copy"></div></article>
+      </div>
+    </section>
+
+    <section class="briefing-section">
+      <header class="section-intro">
+        <p class="eyebrow">Command Panel</p>
+        <h2>Walk It Out</h2>
+      </header>
+      <div class="content-grid command-grid">
+        <article class="briefing-block wide"><h3>Persona</h3><div id="persona" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Stoic</h3><div id="quote" class="body-copy"></div></article>
+        <article class="briefing-block"><h3>Final Query</h3><div id="question" class="body-copy"></div></article>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

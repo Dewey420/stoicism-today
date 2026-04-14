@@ -1,0 +1,33 @@
+{
+  "date": "2026-04-13",
+  "weekday": "Monday",
+  "title": "🏛️🌅 STOICISM TODAY // APRIL 13, 2026",
+  "mode": "🌊 The Inner Tide",
+  "tagline": "Intuition. Reflection. Emotional Clarity.",
+  "holidays": "🍑 National Peach Cobbler Day\n🔤 National Scrabble Day\n🥪 Make Lunch Count Day",
+  "moon": "🌒 Waxing Crescent\n⏳ Early growth phase\n→ Build quietly. Momentum over intensity.",
+  "current": "☽ Moon\n⚔️ Máni\n🌿 Cerridwen\n🎨 Silver / White\n🌿 Mugwort\n💎 Moonstone / Selenite / Pearl\nEmotion • Intuition • Rest",
+  "sigil": {
+    "glyph": "☽",
+    "meaning": "→ Observe. Reflect. Do not force."
+  },
+  "tarot": "The World\nMajor Arcana • 21\n→ Complete the circle. Integration beats endless striving.",
+  "music": "From your playlist:\n🎵 “Fade Into You” — Mazzy Star\n→ Auto-rotated from your playlist source.",
+  "directive": "Listen inward\nSlow your reactions\nLet insight surface naturally\nProtect your energy",
+  "action": "📝 Journal for ten minutes before you answer the world.",
+  "persona": "🏛️ PERSONA — THE INNER TIDE\nObserve before reacting\nTrust subtle signals\nMove in rhythm, not force\nAllow feeling without drowning in it",
+  "quote": "“You have power over your mind—not outside events. Realize this, and you will find strength.”\n— Marcus Aurelius",
+  "question": "Where is The World asking me for a cleaner, braver response today?",
+  "tarotCard": {
+    "id": "m21",
+    "sourceIndex": 21,
+    "name": "The World",
+    "number": "21",
+    "arcana": "Major Arcana",
+    "suit": null,
+    "image": {
+      "filename": "m21.jpg",
+      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/m21.jpg"
+    }
+  }
+}
