@@ -1,7 +1,7 @@
 {
-  "date": "2026-04-14",
-  "weekday": "Tuesday",
-  "title": "🏛️🌅 STOICISM TODAY // APRIL 14, 2026",
+  "date": "2026-04-15",
+  "weekday": "Wednesday",
+  "title": "🏛️🌅 STOICISM TODAY // APRIL 15, 2026",
   "mode": "🌊 The Inner Tide",
   "tagline": "Intuition. Reflection. Emotional Clarity.",
   "holidays": "🍑 National Peach Cobbler Day\n🔤 National Scrabble Day\n🥪 Make Lunch Count Day",
@@ -11,23 +11,23 @@
     "glyph": "☽",
     "meaning": "→ Observe. Reflect. Do not force."
   },
-  "tarot": "The High Priestess\nMajor Arcana • 2\n→ Let silence finish its sentence before you answer.",
-  "music": "From your playlist:\n🎵 “Ocean Eyes” — Billie Eilish\n→ Auto-rotated from your playlist source.",
+  "tarot": "King of Wands\nWands • Minor Arcana • 14\n→ Master yourself first; the rest can follow. Apply it through will, courage, and directed energy.",
+  "music": "From your playlist:\n🎵 “Space Song” — Beach House\n→ Auto-rotated from your playlist source.",
   "directive": "Listen inward\nSlow your reactions\nLet insight surface naturally\nProtect your energy",
   "action": "📝 Journal for ten minutes before you answer the world.",
   "persona": "🏛️ PERSONA — THE INNER TIDE\nObserve before reacting\nTrust subtle signals\nMove in rhythm, not force\nAllow feeling without drowning in it",
   "quote": "“You have power over your mind—not outside events. Realize this, and you will find strength.”\n— Marcus Aurelius",
-  "question": "Where is The High Priestess asking me for a cleaner, braver response today?",
+  "question": "Where should I aim my fire instead of scattering it?",
   "tarotCard": {
-    "id": "m02",
-    "sourceIndex": 2,
-    "name": "The High Priestess",
-    "number": "2",
-    "arcana": "Major Arcana",
-    "suit": null,
+    "id": "w14",
+    "sourceIndex": 63,
+    "name": "King of Wands",
+    "number": "14",
+    "arcana": "Minor Arcana",
+    "suit": "Wands",
     "image": {
-      "filename": "m02.jpg",
-      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/m02.jpg"
+      "filename": "w14.jpg",
+      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/w14.jpg"
     }
   }
 }
