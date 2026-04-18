@@ -1,7 +1,7 @@
 {
-  "date": "2026-04-17",
-  "weekday": "Friday",
-  "title": "🏛️🌅 STOICISM TODAY // APRIL 17, 2026",
+  "date": "2026-04-18",
+  "weekday": "Saturday",
+  "title": "🏛️🌅 STOICISM TODAY // APRIL 18, 2026",
   "mode": "🌊 The Inner Tide",
   "tagline": "Intuition. Reflection. Emotional Clarity.",
   "holidays": "🍑 National Peach Cobbler Day\n🔤 National Scrabble Day\n🥪 Make Lunch Count Day",
@@ -11,23 +11,23 @@
     "glyph": "☽",
     "meaning": "→ Observe. Reflect. Do not force."
   },
-  "tarot": "Two of Cups\nCups • Minor Arcana • 2\n→ Choose deliberately; split attention weakens the day. Apply it through emotion, intuition, and clean-hearted attention.",
-  "music": "From your playlist:\n🎵 “Ocean Eyes” — Billie Eilish\n→ Auto-rotated from your playlist source.",
+  "tarot": "Six of Cups\nCups • Minor Arcana • 6\n→ Restore balance through a concrete act. Apply it through emotion, intuition, and clean-hearted attention.",
+  "music": "From your playlist:\n🎵 “Space Song” — Beach House\n→ Auto-rotated from your playlist source.",
   "directive": "Listen inward\nSlow your reactions\nLet insight surface naturally\nProtect your energy",
   "action": "📝 Journal for ten minutes before you answer the world.",
   "persona": "🏛️ PERSONA — THE INNER TIDE\nObserve before reacting\nTrust subtle signals\nMove in rhythm, not force\nAllow feeling without drowning in it",
   "quote": "“You have power over your mind—not outside events. Realize this, and you will find strength.”\n— Marcus Aurelius",
   "question": "What feeling needs discipline instead of drama today?",
   "tarotCard": {
-    "id": "c02",
-    "sourceIndex": 23,
-    "name": "Two of Cups",
-    "number": "2",
+    "id": "c06",
+    "sourceIndex": 27,
+    "name": "Six of Cups",
+    "number": "6",
     "arcana": "Minor Arcana",
     "suit": "Cups",
     "image": {
-      "filename": "c02.jpg",
-      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/c02.jpg"
+      "filename": "c06.jpg",
+      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/c06.jpg"
     }
   }
 }
