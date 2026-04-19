@@ -1,7 +1,7 @@
 {
-  "date": "2026-04-18",
-  "weekday": "Saturday",
-  "title": "🏛️🌅 STOICISM TODAY // APRIL 18, 2026",
+  "date": "2026-04-19",
+  "weekday": "Sunday",
+  "title": "🏛️🌅 STOICISM TODAY // APRIL 19, 2026",
   "mode": "🌊 The Inner Tide",
   "tagline": "Intuition. Reflection. Emotional Clarity.",
   "holidays": "🍑 National Peach Cobbler Day\n🔤 National Scrabble Day\n🥪 Make Lunch Count Day",
@@ -11,23 +11,23 @@
     "glyph": "☽",
     "meaning": "→ Observe. Reflect. Do not force."
   },
-  "tarot": "Six of Cups\nCups • Minor Arcana • 6\n→ Restore balance through a concrete act. Apply it through emotion, intuition, and clean-hearted attention.",
-  "music": "From your playlist:\n🎵 “Space Song” — Beach House\n→ Auto-rotated from your playlist source.",
+  "tarot": "Page of Wands\nWands • Minor Arcana • 11\n→ Stay curious. Beginner energy can still be disciplined. Apply it through will, courage, and directed energy.",
+  "music": "From your playlist:\n🎵 “Fade Into You” — Mazzy Star\n→ Auto-rotated from your playlist source.",
   "directive": "Listen inward\nSlow your reactions\nLet insight surface naturally\nProtect your energy",
   "action": "📝 Journal for ten minutes before you answer the world.",
   "persona": "🏛️ PERSONA — THE INNER TIDE\nObserve before reacting\nTrust subtle signals\nMove in rhythm, not force\nAllow feeling without drowning in it",
   "quote": "“You have power over your mind—not outside events. Realize this, and you will find strength.”\n— Marcus Aurelius",
-  "question": "What feeling needs discipline instead of drama today?",
+  "question": "Where should I aim my fire instead of scattering it?",
   "tarotCard": {
-    "id": "c06",
-    "sourceIndex": 27,
-    "name": "Six of Cups",
-    "number": "6",
+    "id": "w11",
+    "sourceIndex": 60,
+    "name": "Page of Wands",
+    "number": "11",
     "arcana": "Minor Arcana",
-    "suit": "Cups",
+    "suit": "Wands",
     "image": {
-      "filename": "c06.jpg",
-      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/c06.jpg"
+      "filename": "w11.jpg",
+      "url": "https://raw.githubusercontent.com/metabismuth/tarot-json/master/cards/w11.jpg"
     }
   }
 }
